@@ -23,8 +23,8 @@ for x in file_counts:
 # for y in file_counts['data']:
 #     print
 
-var =  file_counts['data'][0]
-print(var)
+for obj in file_counts['data']:
+    print(var)
 
 
 '''
