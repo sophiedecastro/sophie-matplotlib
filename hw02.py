@@ -2,19 +2,42 @@ import json
 import matplotlib.pyplot as plt
 # import os
 
-filenames = [   
-    'sophie-matplotlib/dates.json',
-]
+# USE BRITISH SPELLING FOR NEIGHBOURHOODS TO MATCH JSON FILE !!!
+# filenames = [   
+#     'dates.json',
+#     'forces.json',
+#     'neighbourhoods.json',  
+# ]
 
-with open('sophie-matplotlib/dates.json', 'r') as f:
-    file_dates = json.loads(f.read())
+with open('precip.json', 'r') as f:
+    file_counts = json.loads(f.read())
+    # print('len(file_counts)=',len(file_counts))
 
-dates = []
-for filename in filenames:
-    with open(filename, 'r') as f:
-        file_dates = json.loads(f.read())
-        dates += file_dates
-print('len(dates)=',len(dates))
+for x in file_counts:
+    # print(file_counts['description']['title']['value'])
+    print(file_counts['description'])
+# for filename in filenames:
+#     place_x = filename[]
+
+# print(file_counts)
+
+
+'''
+with open('neighbourhoods.json', 'r') as f:
+    file_neighbourhoods = json.loads(f.read())
+    print('len(file_neighbourhoods)=',len(file_dates))
+
+with open('forces.json', 'r') as f:
+    file_forces = json.loads(f.read())
+    print('len(file_forces)=',len(file_forces))
+'''
+
+# dates = []
+# for filename in filenames:
+#     with open(filename, 'r') as f:
+#         file_dates = json.loads(f.read())
+#         dates += file_dates
+# print('len(dates)=',len(dates))
 
 '''
 # practice data below
