@@ -15,11 +15,16 @@ with open('precip.json', 'r') as f:
 
 for x in file_counts:
     # print(file_counts['description']['title']['value'])
-    print(file_counts['description'])
+    print(file_counts['data'])
 # for filename in filenames:
 #     place_x = filename[]
-
 # print(file_counts)
+
+# for y in file_counts['data']:
+#     print
+
+var =  file_counts['data'][0]
+print(var)
 
 
 '''
