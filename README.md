@@ -1,4 +1,4 @@
-# HW02: Data Visualiation
+# HW02: Data Visualization
 learn more: [cs40 project webpage](https://github.com/mikeizbicki/cmc-csci040/tree/2020fall/hw_02)
 
 ## Plot 1: US Population, 2000-2018
