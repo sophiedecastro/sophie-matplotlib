@@ -1,8 +1,8 @@
-# this will be the h1 header at the top of the file
+# HW02: Data Visualiation
 learn more: [cs40 project webpage](https://github.com/mikeizbicki/cmc-csci040/tree/2020fall/hw_02)
 
-## this will be the h2 title for plot 1
-plot 1 image here
+## Plot 1: US Population, 2000-2018
+![figure 1](Figure_1.png)
 
 description 1 will be 2 sentences long
 
