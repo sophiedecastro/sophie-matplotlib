@@ -1,0 +1,14 @@
+country,country_code,series,seriescode,measure,period,D1,D2,D3,data,footnoteref
+United States,840,Labour force - Unemployment number,0809,(thousands),      2019YEAR,Labour force survey,Total unemployment,number (thousands),            6000.5,/696
+United States,840,Labour force - Unemployment number,0809,(thousands),      2018YEAR,Labour force survey,Total unemployment,number (thousands),            6313.9,/696
+United States,840,Labour force - Unemployment number,0809,(thousands),      2017YEAR,Labour force survey,Total unemployment,number (thousands),            6982.3,/696
+United States,840,Labour force - Unemployment number,0809,(thousands),      2016YEAR,Labour force survey,Total unemployment,number (thousands),            7751.1,/696
+United States,840,Labour force - Unemployment number,0809,(thousands),      2015YEAR,Labour force survey,Total unemployment,number (thousands),            8296.4,/696
+United States,840,Labour force - Unemployment rate,0810,(percentage),      2019YEAR,Labour force survey,Total unemployment,rate (percentage),               3.7,/696
+United States,840,Labour force - Unemployment rate,0810,(percentage),      2018YEAR,Labour force survey,Total unemployment,rate (percentage),               3.9,/696
+United States,840,Labour force - Unemployment rate,0810,(percentage),      2017YEAR,Labour force survey,Total unemployment,rate (percentage),               4.4,/696
+United States,840,Labour force - Unemployment rate,0810,(percentage),      2016YEAR,Labour force survey,Total unemployment,rate (percentage),               4.9,/696
+United States,840,Labour force - Unemployment rate,0810,(percentage),      2015YEAR,Labour force survey,Total unemployment,rate (percentage),               5.3,/696
+
+ Footnotes 
+696,Persons aged 16 years and over.,
