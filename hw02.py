@@ -9,23 +9,22 @@ y = [] # population
 open_population_file = open('population.csv')
 open_population_reader = csv.reader(open_population_file)
 open_population_data = list(open_population_reader)
-# print(open_population_data[6][5])
 
 for row in reversed(open_population_data[1:20]):
     a = row[5]
     b = a.strip('YEAR')
     x.append(b)
     y.append(row[9])
-# print('x=', x, 'y=', y)
 
 fig, ax = plt.subplots()
-plt.plot(x,y)
+plt.bar(x,y)
 ax.set(xlabel='Year 2000-2018')
 ax.set(ylabel='Mid-Year Population Estimate in Thousands')
 plt.show()
 
 x = [] # year
 y = [] # unemployment number in thousands
+
 '''
 # PLOT 2
 open_unemployment_file = open('unemployment.csv')
@@ -70,7 +69,6 @@ for row in reversed(open_unemployment_data[2:6]):
     a = row[5]
     b = a.strip('YEAR')
     y.append(b)
-# print('z=', z, 'y=', y)
 
 fig, ax = plt.subplots()
 plt.plot (y,z, label = 'Unemployment')
@@ -79,15 +77,3 @@ ax.set(xlabel='Year 2015-2018')
 ax.set(ylabel='Number of people in Thousands')
 plt.legend() 
 plt.show()
-
-'''
-
-#print(plt.style.available) # to see available styles
-# plt.style.use('seaborn-pastel')
-
-#plt.grid(True) idk
-# plt.tight_layout() idk
-
-# plt.savefig('plot.png') -- save plot to computer/download
-
-'''
