@@ -1,83 +1,86 @@
-import json
 import matplotlib.pyplot as plt
-# import os
 import csv
 
+x = [] # year
+y = [] # population
 
+# PLOT 1
 
-'''
-# USE BRITISH SPELLING FOR NEIGHBOURHOODS TO MATCH JSON FILE !!!
-# filenames = [   
-#     'dates.json',
-#     'forces.json',
-#     'neighbourhoods.json',  
-# ]
+open_population_file = open('population.csv')
+open_population_reader = csv.reader(open_population_file)
+open_population_data = list(open_population_reader)
+# print(open_population_data[6][5])
 
-with open('precip.json', 'r') as f:
-    file_counts = json.loads(f.read())
-    # print('len(file_counts)=',len(file_counts))
+for row in reversed(open_population_data[1:20]):
+    a = row[5]
+    b = a.strip('YEAR')
+    x.append(b)
+    y.append(row[9])
+# print('x=', x, 'y=', y)
 
-for x in file_counts:
-    # print(file_counts['description']['title']['value'])
-    print(file_counts['data'])
-# for filename in filenames:
-#     place_x = filename[]
-# print(file_counts)
-
-# for y in file_counts['data']:
-#     print
-
-# for obj in file_counts['data']:
-#     print(var)
-
-'''
-'''
-with open('neighbourhoods.json', 'r') as f:
-    file_neighbourhoods = json.loads(f.read())
-    print('len(file_neighbourhoods)=',len(file_dates))
-
-with open('forces.json', 'r') as f:
-    file_forces = json.loads(f.read())
-    print('len(file_forces)=',len(file_forces))
-'''
-
-# dates = []
-# for filename in filenames:
-#     with open(filename, 'r') as f:
-#         file_dates = json.loads(f.read())
-#         dates += file_dates
-# print('len(dates)=',len(dates))
-
-'''
-# practice data below
-
-# plot 1
-ages_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
-dev_y = [38496, 42000, 46752, 49320, 53200,
-         56000, 62316, 64928, 67317, 68748, 73752]
-py_dev_y = [45372, 48876, 53850, 57287, 63016,
-            65998, 70003, 70000, 71496, 75370, 83640]
-
-plt.plot(ages_x, py_dev_y,label = 'Python')
-
-js_dev_y = [37810, 43515, 46823, 49293, 53437,
-            56373, 62375, 66674, 68745, 68746, 74583]
-
-plt.plot(ages_x, js_dev_y,label = 'JavaScript')
-
-plt.plot(ages_x, dev_y, color='#444444', linestyle='--', marker='.', label = 'All Devs')
-
-plt.xlabel('x label 1')
-plt.ylabel('y label 1')
-plt.title('this will be title 1')
-# plt.legend(['All Devs', 'Python']) #adding legends requires you to know the order in which things were added in your code
-plt.legend() # can run empty if you have labels above
+fig, ax = plt.subplots()
+plt.plot(x,y)
+ax.set(xlabel='Year 2000-2018')
+ax.set(ylabel='Mid-Year Population Estimate in Thousands')
 plt.show()
 
-# plot 2
-plt.bar(ages_x, js_dev_y)
+x = [] # year
+y = [] # unemployment number in thousands
+'''
+# PLOT 2
+open_unemployment_file = open('unemployment.csv')
+open_unemployment_file = csv.reader(open_unemployment_file)
+open_unemployment_data = list(open_unemployment_file)
+# print(open_unemployment_data[1][9])
+
+for row in reversed(open_unemployment_data[1:6]):
+    a = row[5]
+    b = a.strip('YEAR')
+    x.append(b)
+    y.append(row[9])
+print('x=', x, 'y=', y)
+
+fig, ax = plt.subplots()
+plt.bar(x,y)
+ax.set(xlabel='Year 2015-2019')
+ax.set(ylabel='Unemployment number in thousands')
 plt.show()
-# plt.legend() #tbd
+
+'''
+#PLOT 3
+
+x=[]
+y=[]
+z=[]
+
+open_population_file = open('population.csv')
+open_population_reader = csv.reader(open_population_file)
+open_population_data = list(open_population_reader)
+
+for row in reversed(open_population_data[1:5]):
+    x.append(row[9])
+print('x=', x)
+
+open_unemployment_file = open('unemployment.csv')
+open_unemployment_file = csv.reader(open_unemployment_file)
+open_unemployment_data = list(open_unemployment_file)
+
+for row in reversed(open_unemployment_data[2:6]):
+    z.append(row[9])
+    a = row[5]
+    b = a.strip('YEAR')
+    y.append(b)
+# print('z=', z, 'y=', y)
+
+fig, ax = plt.subplots()
+plt.plot (y,z, label = 'Unemployment')
+plt.plot (y,x, label = 'Population')
+ax.set(xlabel='Year 2015-2018')
+ax.set(ylabel='Number of people in Thousands')
+plt.legend() 
+plt.show()
+
+'''
 
 #print(plt.style.available) # to see available styles
 # plt.style.use('seaborn-pastel')
