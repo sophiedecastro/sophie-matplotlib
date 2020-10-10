@@ -1,7 +1,11 @@
 import json
 import matplotlib.pyplot as plt
 # import os
+import csv
 
+
+
+'''
 # USE BRITISH SPELLING FOR NEIGHBOURHOODS TO MATCH JSON FILE !!!
 # filenames = [   
 #     'dates.json',
@@ -26,7 +30,7 @@ for x in file_counts:
 # for obj in file_counts['data']:
 #     print(var)
 
-
+'''
 '''
 with open('neighbourhoods.json', 'r') as f:
     file_neighbourhoods = json.loads(f.read())
