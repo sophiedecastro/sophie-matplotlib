@@ -1,0 +1,25 @@
+country,country_code,series,seriescode,measure,period,D1,D2,D3,data,footnoteref
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2018YEAR,de jure,,,            327167,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2017YEAR,de jure,,,            325147,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2016YEAR,de jure,,,            323128,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2015YEAR,de jure,,,            320897,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2014YEAR,de jure,,,            318563,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2013YEAR,de jure,,,            316205,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2012YEAR,de jure,,,            313998,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2011YEAR,de jure,,,            311663,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2010YEAR,de jure,,,            309348,/1986/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2009YEAR,de jure,,,            306772,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2008YEAR,de jure,,,            304094,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2007YEAR,de jure,,,            301231,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2006YEAR,de jure,,,            298380,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2005YEAR,de jure,,,            295517,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2004YEAR,de jure,,,            292805,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2003YEAR,de jure,,,            290108,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2002YEAR,de jure,,,            287625,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2001YEAR,de jure,,,            284969,/1737/2040
+United States,840,Population - Estimates of mid-year population,0101,(thousands),      2000YEAR,de jure,,,            282162,/1737/2040
+
+ Footnotes 
+1737,Intercensal estimates.,
+1986,Postcensal estimates.,
+2040,Excluding U.S. Armed Forces overseas and civilian U.S. citizens whose usual place of residence is outside the United States.,
